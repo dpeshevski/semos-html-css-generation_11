@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+}
+
+#text {
+  /* margin: 10px 5px 10px 5px; */
+  margin: 15px;
+  /* margin: 12px; */
+  /* margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-left: 5px; */
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text {
+  color: red;
+  font-size: 24px;
+}
+
+ul li {
+  color: yellow;
+}
+
+li a {
+  text-decoration: none;
+}
+
+ul, p {
+  color: red;
+}
+
+li:first-of-type + li {
+  color: red;
+}
+
+p ~ ul  {
+  color: blue;
+}
+
+ul > li {
+  color: green;
+}
+
+#listContainer ~ span {
+  color: purple;
+}
+
+.text ~ span {
+  color: yellow;
+}
+
+h2[rel="friend"] {
+  color: blue;
+}
+
+h1[rel="external"] {
+  color: red;
+}
+
+a[href="http://www.google.com"] {
+  text-decoration: none;
+  color: red;
+}
+
+h1[rel*="external"] {
+  color: red;
+}
+
+div[id*="post"] {
+  color: red;
+}
+
+h1[rel^="external"] {
+  color: red;
+}
+
+div[id^="post"] {
+  color: yellow;
+}
+
+h1[rel$="external"] {
+  color: red;
+}
+
+h1[rel~="external"] {
+  color: red;
+}
+
+h1[rel|="friend"] {
+  color: red;
+}
+
+div[class|="button"] {
+  color: blue;
+}
+
+h1[rel="friend"][title^="Important"] {
+  color: red;
+}
