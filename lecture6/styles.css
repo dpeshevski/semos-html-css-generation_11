@@ -29,6 +29,78 @@ li a {
     text-decoration: none;
 }
 
-ul+p {
+
+/* ul,
+p {
     color: red;
+} */
+
+
+/* li:first-of-type+li {
+    color: red;
+} */
+
+p~ul {
+    color: blue;
+}
+
+
+/* ul>li {
+    color: green;
+} */
+
+#listContainer~span {
+    color: purple;
+}
+
+.text~span {
+    color: yellow;
+}
+
+h2[rel="friend"] {
+    color: blue;
+}
+
+h1[rel="external"] {
+    color: chartreuse;
+}
+
+a[href="http://www.google.com"] {
+    color: red;
+}
+
+h1[rel*="external"] {
+    color: red;
+}
+
+div[id*="post"] {
+    color: blue;
+}
+
+h1[rel^="external"] {
+    color: red;
+}
+
+div[id^="post"] {
+    color: yellow;
+}
+
+h1[rel$="external"] {
+    color: salmon;
+}
+
+h1[rel~="external"] {
+    color: rgb(234, 255, 0);
+}
+
+h1[rel|="friend"] {
+    color: red;
+}
+
+div[class|="button"] {
+    color: blue;
+}
+
+h1[rel="friend"][title^="Important"] {
+    color: rgb(20, 20, 220);
 }
