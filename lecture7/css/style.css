@@ -2,6 +2,9 @@
 
 :root {
   --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
 }
 
 * {
@@ -82,7 +85,7 @@ img {
 
 .showcase .grid {
   overflow: visible;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 55% auto;
   gap: 30px;
 }
 
@@ -129,66 +132,53 @@ img {
   -o-transform: skewY(-3deg);
 }
 
-/* Utilities */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  overflow: auto;
-  padding: 0 40px;
+/* Stats */
+
+.stats {
+  padding-top: 100px;
 }
 
-/* todo */
-.card {
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
-  padding: 20px;
-  margin: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 30px;
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+.stats .grid h3 {
+  font-size: 2.15rem;
 }
 
-.btn-outline {
-  background-color: transparent;
-  border: 1px #fff solid;
+.stats .grid p {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-.btn:hover {
-  transform: scale(.9);
-  -webkit-transform: scale(.9);
-  -moz-transform: scale(.9);
-  -ms-transform: scale(.9);
-  -o-transform: scale(.9);
+
+/* CLI */
+.cli .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.cli .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+
+.languages .flex {
+  flex-wrap: wrap;
+}
+
+.languages .card {
+  text-align: center;
+  margin: 16px 10px 30px;
+}
+
+.languages .card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
 }
